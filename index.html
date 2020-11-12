@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pestaña</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#form">Formulario</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#listas">Frutas</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#video">videos</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#texto">etiqueta de texto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- etiquetas de imagenes -->
+        <picture>
+            <source srcset="imagen.webp" />
+            <!-- Formato WebP -->
+            <source srcset="imagen.jxr" />
+            <!-- Formato JPEG XR -->
+            <img src="imagen.jpg" alt="imagen de prueba" />
+            <!-- En este caso, indicamos que el navegador utilice la imagen
+            con el formato WebP. En caso de no soportarlo, lo intentará con el formato 
+            JPEG XR. Si tampoco lo soporta, mostrará la imagen en formato JPEG, que es la 
+            que está soportada por todos los navegadores -->
+        </picture>
+        <section>
+            <figure>
+                <strong>Uleam</strong>
+                <img src="https://seeklogo.com/images/U/uleam-logo-853FE191D4-seeklogo.com.png" alt="Logo uleam">
+                <figcaption>Logotipo en svg uleam.</figcaption>
+            </figure>
+        </section>
+        <aside>
+            <figure>
+                <img src="https://seeklogo.com/images/U/uleam-logo-3F01236F5D-seeklogo.com.png"
+                    alt="Logo de la uleam dos">
+                <figcaption>Logotipo de la uleam.</figcaption>
+            </figure>
+        </aside>
+        <section id="video">
+            <video controls preload="auto">
+                <source src="./Episodio4.m4v#t" />
+            </video>
+            <!-- etiquetas de contenido externo-->
+            <iframe width="400" height="365" src="https://www.youtube.com/embed/kN1XP-Bef7w" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <!-- etiquetas de texto -->
+        <div id="texto">
+            <h1>titulo uno</h1>
+            <h2>titulo dos</h2>
+            <h3>titulo tres</h3>
+            <h4>titulo 4</h4>
+            <h5>titulo 5</h5>
+            <h6>titulo 6</h7>
+                <b>negrita</b>
+                <i>cursiva</i>
+                <b> Fragmento de texto sin importancia destacable (fines utilitarios).</b>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rerum vel saepe<u> Fragmento de
+                        texto para nombres propios o escritura incorrecta intencionada (sic). </u></p>
+                <br>
+                <s> Fragmento de texto inexacto o que ya no es relevante.
+                    <hr> (errores o inexactitudes)</s>
+                <pre>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</pre>
+                <br>
+                <span> Fragmento de texto sin significado (útil para seleccionar).</span>
+                <hr>
+                <p>El resultado de 24<sup>2</sup> es el valor de X<sub>a</sub>.</p>
+                <article >
+                    <section>
+                        <p>
+                            <br>
+                            <q cite="http://www.imdb.com/title/tt0468569/">
+                                Hay hombres que solo quieren ver arder el mundo.
+                            </q>
+                        </p>
+                        <p>
+                            El término <dfn><abbr title="Kilómetro">Km</abrr></dfn> es una unidad de longitud.
+                        </p>
+                    </section>
+                </article>
+        </div>
+        </article>
+        <section class="c1">
+        <table >
+            <!-- Cabecera -->
+            <tr>
+                <th>nombre</th>
+                <!-- Celda de cabecera de la columna 1 -->
+                <th>apellido</th>
+                <!-- Celda de cabecera de la columna 2 -->
+                <th>id</th>
+                <!-- Celda de cabecera de la columna 3 -->
+            </tr>
+            <!-- Primera fila -->
+            <tr>
+                <td>alisson</td>
+                <!-- Primera celda de la primera fila -->
+                <td>delgado</td>
+                <!-- Segunda celda de la primera fila -->
+                <td>2</td>
+                <!-- Tercera celda de la primera fila -->
+            </tr>
+            <!-- Segunda fila -->
+            <tr>
+                <td>irving</td>
+                <!-- Primera celda de la segunda fila -->
+                <td>anchundia</td>
+                <!-- Segunda celda de la segunda fila -->
+                <td>4</td>
+                <!-- Tercera celda de la segunda fila -->
+            </tr>
+        </table>
+    </section>
+    </main>
+<footer>
+        <!-- formulario -->
+        <form action="" id="form" class="c3">
+            <label for="apellido">
+                <span>Escriba su apellido</span>
+                <input type="text" id="apellido" name="apellido" placeholder="apellido" autocomplete="name" required>
+            </label>
+            <label for="nombre">
+                <span>Esciba su nombre</span>
+                <input type="text" id="nombre" placeholder=" nombre" />
+            </label>
+            <br>
+            <label for="matricula">
+                <span>¿Qué día te matriculaste?</span>
+                <input type="date" id="matricula" />
+            </label>
+            <br>
+            <label for="horario">
+                <span>¿En que horario estudias?</span>
+                <input type="time" id="horario" />
+            </label>
+            <label for="tiempo">
+                <span>ingrese su tiempo</span>
+                <input type="time" id="tiempo" name="tiempo" autocomplete="name" required>
+            </label>
+            <button type="submit">Enviar formulario</button>
+        </form>
+        <!-- listas -->
+        <section id="listas" class="c2">
+            <ul>
+                <li>Frutas</li>
+                <ol>
+                    <li>Manzana</li>
+                    <li>Platano</li>
+                </ol>
+                <li>Carnes</li>
+                <ol>
+                    <li>Pollo</li>
+                    <li>Carne molida</li>
+                </ol>
+                <li>Verduras</li>
+                <ol>
+                    <li>Limón</li>
+                    <li>
+                        <a
+                            href="https://www.google.com/search?q=sopa+de+zanahoria&oq=sopa+de+zanah&aqs=chrome.0.0l3j69i57j0l4.3060j0j7&sourceid=chrome&ie=UTF-8">Zanahoria</a>
+                    </li>
+                </ol>
+            </ul>
+            <dl>
+                <dt>Gallina</dt>
+                <dd>Ave doméstica del orden de las galliformes.</dd>
+                <dd>Cobarde, pusilánime.</dd>
+            </dl>
+        </section>
+</footer>
+</body>
+</html>

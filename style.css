@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    font-size: 62.5%;
+}
+.c1,.c2,.c3{
+    width: 100%;
+    min-width: 150px;
+    height: 150px;
+}
+.c1{
+    background-color: aqua;
+}
+.c2{
+    background-color: rgb(36, 117, 63);
+
+}
+.c3{
+    background-color: salmon;
+}
